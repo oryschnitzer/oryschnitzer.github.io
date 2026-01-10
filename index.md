@@ -4,3 +4,4 @@
 
 Text 
 
+[View my Publications →](publications)
