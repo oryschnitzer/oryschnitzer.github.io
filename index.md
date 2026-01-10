@@ -1,29 +1,77 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ory Schnitzer</title>
 <style>
   body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     max-width: 800px;
     margin: 0 auto;
     padding: 60px 20px;
-    line-height: 1.6;
+    line-height: 1.5;
     color: #333;
+    font-weight: 300; /* Makes text look lighter/cleaner */
   }
-  h1 { font-weight: normal; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-  a { color: #0066cc; text-decoration: none; }
+  
+  /* Remove all bolding and lines */
+  h1, h2, h3, strong, b {
+    font-weight: normal; 
+    border: none;
+  }
+
+  h1 { font-size: 26px; margin-bottom: 5px; }
+  p { margin-top: 10px; }
+
+  /* Clean Link Styling */
+  a { color: #0044cc; text-decoration: none; }
   a:hover { text-decoration: underline; }
-  .header-container { display: flex; align-items: flex-start; gap: 30px; margin-bottom: 40px; }
-  .profile-pic { width: 200px; border-radius: 8px; }
+
+  /* Layout for Photo + Text */
+  .header-container { 
+    display: flex; 
+    align-items: flex-start; 
+    gap: 40px; 
+    margin-bottom: 50px; 
+  }
+  .profile-pic { 
+    width: 220px; 
+    border-radius: 2px; /* Slight softening of corners, but mostly square */
+  }
+
+  /* Mobile tweaks */
+  @media (max-width: 600px) {
+    .header-container { flex-direction: column; }
+    .profile-pic { width: 100%; max-width: 200px; }
+  }
 </style>
+</head>
+<body>
 
 <div class="header-container">
-  <img src="me.jpg" class="profile-pic">
+  <img src="me.jpg" class="profile-pic" alt="Ory Schnitzer">
   <div>
     <h1>Ory Schnitzer</h1>
-    <p><strong>Professor of Applied Mathematics</strong><br>
+    <p>Professor of Applied Mathematics<br>
     Imperial College London</p>
-    <p>o.schnitzer@imperial.ac.uk</p>
+    <p>I am an applied mathematician interested in asymptotic analysis, fluid dynamics, and wave propagation.</p>
   </div>
 </div>
 
+<h3>Research Interests</h3>
+<ul style="padding-left: 20px; margin-top: 5px;">
+  <li>Singular perturbations</li>
+  <li>Micro-hydrodynamics</li>
+  <li>Wave-structure interactions</li>
+</ul>
+
 <br>
 
-### [→ View Publications](publications.html)
+<p><a href="publications.html" style="font-size: 18px;">&rarr; Publications</a></p>
+
+</body>
+</html>
