@@ -20,14 +20,9 @@
     <h1>Ory Schnitzer</h1>
     <p><strong>Professor of Applied Mathematics</strong><br>
     Imperial College London</p>
-    <p>I am an applied mathematician interested in asymptotic analysis, fluid dynamics, and wave propagation.</p>
+    <p>o.schnitzer@imperial.ac.uk</p>
   </div>
 </div>
-
-### Research Interests
-* Singular perturbations
-* Micro-hydrodynamics
-* Wave-structure interactions
 
 <br>
 
