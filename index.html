@@ -47,20 +47,38 @@ layout: null
 
     /* --- Link Cluster Styling --- */
     .link-group {
-      margin-bottom: 35px; /* Creates the vertical space between clusters */
+      margin-bottom: 35px;
     }
 
     .link-group h2 {
       font-size: 14px;
       text-transform: uppercase;
       letter-spacing: 1px;
-      color: #888; /* A subtle grey to distinguish titles from links */
+      color: #888;
       margin-bottom: 12px;
     }
 
     .link-group p {
       margin: 8px 0;
       font-size: 18px;
+    }
+
+    /* --- Interactive Arrow Styling --- */
+    .arrow-link {
+      display: inline-block; 
+    }
+
+    .arrow-link::before {
+      content: "→";
+      display: inline-block;
+      margin-right: 8px;
+      color: #888; /* Soft grey by default */
+      transition: transform 0.2s ease, color 0.2s ease; /* Animates movement and color */
+    }
+
+    .arrow-link:hover::before {
+      transform: translateX(4px); /* Pushes arrow to the right */
+      color: #0044cc; /* Matches link color on hover */
     }
 
     @media (max-width: 600px) {
@@ -83,13 +101,13 @@ layout: null
 </div>
 
 <div class="link-group">
-  <p><a href="publications.html">&rarr; Publications</a></p>
+  <p><a href="publications.html" class="arrow-link">Publications</a></p>
 </div>
 
 <div class="link-group">
-  <h2>Seminar series</h2>
-  <p><a href="https://www.imperial.ac.uk/fluid-dynamics-group/seminars/">&rarr; Fluid dynamics seminar</a></p>
-  </div>
+  <h2>Seminars series</h2>
+  <p><a href="https://www.imperial.ac.uk/fluid-dynamics-group/seminars/" class="arrow-link">Fluid dynamics seminar</a></p>
+</div>
 
 </body>
 </html>
