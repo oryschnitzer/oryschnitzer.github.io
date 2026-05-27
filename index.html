@@ -6,6 +6,7 @@ layout: null
 <html>
 <head>
   <meta name="google-site-verification" content="Fd9jlKvR52OG_Vn0d7cysOscxudIuFVdkn_8cLcweys" />
+  <meta name="description" content="Personal webpage of Ory Schnitzer, Professor of Applied Mathematics at Imperial College London.">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ory Schnitzer</title>
@@ -44,7 +45,20 @@ layout: null
       border-radius: 2px;
     }
 
-    .nav-links p {
+    /* --- Link Cluster Styling --- */
+    .link-group {
+      margin-bottom: 35px; /* Creates the vertical space between clusters */
+    }
+
+    .link-group h2 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #888; /* A subtle grey to distinguish titles from links */
+      margin-bottom: 12px;
+    }
+
+    .link-group p {
       margin: 8px 0;
       font-size: 18px;
     }
@@ -68,10 +82,14 @@ layout: null
   </div>
 </div>
 
-<div class="nav-links">
+<div class="link-group">
   <p><a href="publications.html">&rarr; Publications</a></p>
-  <p><a href="https://www.imperial.ac.uk/fluid-dynamics-group/seminars/">&rarr; Fluid dynamics seminar</a></p>
 </div>
+
+<div class="link-group">
+  <h2>Seminars & Events</h2>
+  <p><a href="https://www.imperial.ac.uk/fluid-dynamics-group/seminars/">&rarr; Fluid dynamics seminar</a></p>
+  </div>
 
 </body>
 </html>
